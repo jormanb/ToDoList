@@ -20,17 +20,20 @@
                 <ul>
                     <% for(i = 0; i<Lista.length; i++){%>
                         <li class="item">
-                            <input class="checkbox" type="checkbox" name=<%=i%>>
-                            <span class="text"><%= Lista[i] %></span>
+                            <input class="checkbox" type="checkbox"  name='<%=Lista[i]._id%>'>
+                            <span class="text"><%= Lista[i].content %></span>
                         </li>
                     <% } %>
                 </ul>
                 </form>
                 <form class="newElement" action="/add" method="post">
                     <input class="newItem" type="text" name="newItem" placeholder="Nuevo Elemento..." autocomplete="off">
-                    <button class="addBtn" type="submit" name="button">Añadir</button>
+                    <button class="addBtn" type="submit" name="button"></button>
                 </form>
             </div>
+        </div>
+        <div class="footer">
+            <span class="text">@Copyright 2023 KhanDev</span>
         </div>
     </main>
 
