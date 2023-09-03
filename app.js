@@ -9,7 +9,7 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
 app.set('view engine', 'ejs');
 
-mongoose.connect('mongodb://localhost:27017/todolist', {UseNewUrlParser:true});
+mongoose.connect('mongodb+srv://jormanb64:R13NulNqid1Tde09@cluster0.1tlnoez.mongodb.net/todolist', {UseNewUrlParser:true});
 
 const todolistSchema = new mongoose.Schema({
     content: String,
